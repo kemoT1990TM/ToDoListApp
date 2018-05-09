@@ -3,3 +3,7 @@ Doctor's appointment	See doctor at Sierakowskiego Street	07-05-2018
 Finish on-boarding process	Finish before vacation	22-05-2018
 Speedcubing event	Prepare for speedcubing event in July.	23-06-2018
 Find place for vacation	Find comfortable and rather cheap place to stay during vacation	30-06-2018
+New item testing	Testing if new item will be added using Dialog	09-05-2018
+Second test	Testing updating view	17-05-2018
+Third test	Testing selection	30-05-2018
+Third test	Testing selection	30-05-2018
