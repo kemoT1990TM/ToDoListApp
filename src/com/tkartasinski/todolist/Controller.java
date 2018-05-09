@@ -1,5 +1,6 @@
 package com.tkartasinski.todolist;
 
+import com.tkartasinski.todolist.datamodel.ToDoData;
 import com.tkartasinski.todolist.datamodel.ToDoItem;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
@@ -29,11 +30,11 @@ public class Controller {
                 LocalDate.of(2018, Month.APRIL,8));
         ToDoItem item2=new ToDoItem("Doctor's appointment","See doctor at Sierakowskiego Street",
                 LocalDate.of(2018, Month.MAY,7));
-        ToDoItem item3=new ToDoItem("Finish on-boarding process","Finish before holidays",
+        ToDoItem item3=new ToDoItem("Finish on-boarding process","Finish before vacation",
                 LocalDate.of(2018, Month.MAY,22));
-        ToDoItem item4=new ToDoItem("Speedcubing event","Prepare for speedcubing event and solve fast.",
+        ToDoItem item4=new ToDoItem("Speedcubing event","Prepare for speedcubing event in July.",
                 LocalDate.of(2018, Month.JUNE,23));
-        ToDoItem item5=new ToDoItem("Find place for holidays","Finde comfortable and rathre cheap place to stay during holidays",
+        ToDoItem item5=new ToDoItem("Find place for vacation","Find comfortable and rather cheap place to stay during vacation",
                 LocalDate.of(2018, Month.JUNE,30));
 
         toDoItems=new ArrayList<ToDoItem>();
@@ -42,6 +43,8 @@ public class Controller {
         toDoItems.add(item3);
         toDoItems.add(item4);
         toDoItems.add(item5);
+
+        ToDoData.getInstance().setTodoItems(toDoItems);
 
         todoListView.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<ToDoItem>() {
             @Override
